@@ -15,3 +15,12 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore vim temp files
+*~
+*.swp
+*.swo
+
+# Ignore rvm config files
+.ruby-version
+.ruby-gemset
