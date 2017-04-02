@@ -21,3 +21,12 @@
 
 # Ignore Rails environment vars
 /config/environment_variables.yml
+
+# Ignore vim temp files
+*~
+*.swp
+*.swo
+
+# Ignore rvm config files
+.ruby-version
+.ruby-gemset
