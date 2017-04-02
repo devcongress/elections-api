@@ -20,7 +20,7 @@
 .idea
 
 # Ignore Rails environment vars
-/config/environment_variables.yml
+/config/initializers/environment_variables.rb
 
 # Ignore vim temp files
 *~
