@@ -19,9 +19,6 @@
 # Ignore Intellij files
 .idea
 
-# Ignore Rails environment vars
-/config/initializers/environment_variables.rb
-
 # Ignore vim temp files
 *~
 *.swp
@@ -30,3 +27,6 @@
 # Ignore rvm config files
 .ruby-version
 .ruby-gemset
+
+# Ignore .env
+.env
