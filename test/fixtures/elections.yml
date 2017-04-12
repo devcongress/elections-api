@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 2012
+  started_at: 2017-04-12 14:19:12
+  ended_at: 2017-04-12 14:19:12
+
+two:
+  year: 2016
+  started_at: 2017-04-12 14:19:12
+  ended_at: 2017-04-12 14:19:12

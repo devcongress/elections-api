@@ -61,6 +61,20 @@ CREATE TABLE ar_internal_metadata (
 
 
 --
+-- Name: elections; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE elections (
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    year integer NOT NULL,
+    started_at timestamp without time zone NOT NULL,
+    ended_at timestamp without time zone NOT NULL,
+    created_at timestamp without time zone DEFAULT now() NOT NULL,
+    updated_at timestamp without time zone DEFAULT now() NOT NULL
+);
+
+
+--
 -- Name: political_parties; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -71,8 +85,7 @@ CREATE TABLE political_parties (
     chairman text NOT NULL,
     general_secretary text NOT NULL,
     logo_url text NOT NULL,
-    colors text NOT NULL,
-    "array" text NOT NULL,
+    colors text[] NOT NULL,
     created_at timestamp without time zone DEFAULT now() NOT NULL,
     updated_at timestamp without time zone DEFAULT now() NOT NULL
 );
@@ -96,6 +109,14 @@ ALTER TABLE ONLY ar_internal_metadata
 
 
 --
+-- Name: elections elections_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY elections
+    ADD CONSTRAINT elections_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: political_parties political_parties_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -112,6 +133,20 @@ ALTER TABLE ONLY schema_migrations
 
 
 --
+-- Name: index_elections_on_year; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX index_elections_on_year ON elections USING btree (year);
+
+
+--
+-- Name: index_political_parties_on_name; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX index_political_parties_on_name ON political_parties USING btree (name);
+
+
+--
 -- PostgreSQL database dump complete
 --
 
@@ -119,6 +154,9 @@ SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
 ('20170412110704'),
-('20170412111942');
+('20170412111942'),
+('20170412141912'),
+('20170412142316'),
+('20170412142407');
 
 
