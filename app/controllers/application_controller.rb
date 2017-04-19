@@ -1,12 +1,14 @@
 class ApplicationController < ActionController::API
-  after_action :set_jsonapi_content_type, only: [:index, :show]
+  after_action :set_content_type, only: [:index, :show]
   before_action :verify_accept_header
   before_action :verify_content_type
 
   private
 
-  def set_jsonapi_content_type
-    response.content_type = "application/vnd.api+json"
+  def set_content_type
+    content_type = request.accept
+    content_type = "application/vnd.api+json" if content_type.blank?
+    response.content_type = content_type
   end
 
   def verify_content_type
@@ -18,11 +20,11 @@ class ApplicationController < ActionController::API
   end
 
   def verify_accept_header
-    unless request.headers["Accept"].blank?
+    unless request.accept.blank?
       unless %w(
                 application/vnd.api+json
                 application/json
-              ).include?(request.headers["Accept"])
+              ).include?(request.accept)
         render status: :not_acceptable
       end
     end

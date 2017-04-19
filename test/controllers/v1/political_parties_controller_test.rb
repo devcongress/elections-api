@@ -5,9 +5,9 @@ class V1::PoliticalPartiesControllerTest < ActionDispatch::IntegrationTest
     @party = political_parties(:one)
   end
 
-  test "should not accept bad `Accept` header" do
+  test "should not accept catch-all `Accept` header" do
     get v1_political_parties_url(@party),
-        headers: { "Accept": "text/html" }
+        headers: { "Accept": "*/*" }
 
     assert_response :not_acceptable
   end
@@ -18,5 +18,13 @@ class V1::PoliticalPartiesControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :ok
     assert_equal "application/vnd.api+json", @response.content_type
+  end
+
+  test "should accept `application/json` as Accept header value" do
+    get v1_political_party_url(@party),
+        headers: { "Accept": "application/json" }
+
+    assert_response :ok
+    assert_equal "application/json", @response.content_type
   end
 end

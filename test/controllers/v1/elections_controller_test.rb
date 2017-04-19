@@ -7,18 +7,23 @@ class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
 
   test "should find election by id" do
     get v1_election_url(@election),
-        headers: {
-          "Accept": "application/vnd.api+json"
-        }
+        headers: { "Accept": "application/vnd.api+json"}
 
-    assert_equal "application/vnd.api+json", @response.content_type
+    assert_response :ok
+    assert_equal jsonapi_media_type, @response.content_type
+  end
+
+  test "should accept `application/json` as Accept header value" do
+    get v1_election_url(@election),
+        headers: { "Accept": "application/json" }
+
+    assert_response :ok
+    assert_equal "application/json", @response.content_type
   end
 
   test "should not accept */*" do
     get v1_election_url(@election),
-        headers: {
-          "Accept": "*/*"
-        }
+        headers: { "Accept": "*/*" }
 
     assert_response :not_acceptable
   end

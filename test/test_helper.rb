@@ -7,4 +7,7 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def jsonapi_media_type
+    "application/vnd.api+json"
+  end
 end
