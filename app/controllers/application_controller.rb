@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  after_action :set_content_type, only: [:index, :show]
+  after_action :set_content_type, except: [:destroy]
   before_action :verify_accept_header
   before_action :verify_content_type
 
