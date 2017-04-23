@@ -28,6 +28,24 @@ Follow instructions [here](https://git-scm.com/downloads) to install the latest 
 
 ## How to run the test suite
 
-## Services (job queues, cache servers, search engines, etc.)
+To run the test suite, run `rails test`
 
-## Deployment instructions
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Guidelines
+
+Use the following guides for getting things done, programming well, and
+programming in style.
+
+* [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
+* [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
+* [Style](http://github.com/thoughtbot/guides/blob/master/style)
+
+## TODO
+* Deployment Instructions
