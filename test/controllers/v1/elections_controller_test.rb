@@ -7,7 +7,7 @@ class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
 
   test "should find election by id" do
     get v1_election_url(@election),
-        headers: { "Accept": "application/vnd.api+json"}
+        headers: { "Accept": "application/vnd.api+json" }
 
     assert_response :ok
     assert_equal jsonapi_media_type, @response.content_type
@@ -33,7 +33,7 @@ class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
          as: :json,
          headers: {
            "Content-Type": "application/vnd.api+json",
-           "Accept": "application/vnd.api+json",
+           "Accept": "application/vnd.api+json"
          },
          params: {
            "election": {
@@ -44,7 +44,7 @@ class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
          }
 
     assert_response :unprocessable_entity
-    #TODO(yawboakye): Test error response object
+    # TODO(yawboakye): Test error response object
   end
 
   test "should not save election with start date later than end date" do
@@ -52,20 +52,20 @@ class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
     ended_at = started_at - 2.days
     post v1_elections_url,
               as: :json,
-         headers: {
-          "Content-Type": "application/vnd.api+json",
-          "Accept": "application/vnd.api+json"
-         },
-         params: {
-           "data": {
-             "attributes": {
-               "year": started_at.year,
-               "started-at": started_at.rfc3339,
-               "ended-at": ended_at.rfc3339
-             },
-             "type": "elections"
-           }
-         }
+              headers: {
+                "Content-Type": "application/vnd.api+json",
+                "Accept": "application/vnd.api+json"
+              },
+              params: {
+                "data": {
+                  "attributes": {
+                    "year": started_at.year,
+                    "started-at": started_at.rfc3339,
+                    "ended-at": ended_at.rfc3339
+                  },
+                  "type": "elections"
+                }
+              }
 
     assert_response :bad_request
     # TODO(yawboakye): Test error response object

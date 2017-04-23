@@ -1,6 +1,13 @@
 AllCops:
   Exclude:
-    - db/schema.rb
+    - Gemfile
+    - Rakefile
+    - db/**/
+    - db/migrate/**
+    - bin/**/
+    - config/**
+    - config/initializers/**
+    - config/environments/**
 
 Style/AccessorMethodName:
   Description: Check the naming of accessor methods for get_/set_.
@@ -53,7 +60,7 @@ Style/CharacterLiteral:
 
 Style/ClassAndModuleChildren:
   Description: 'Checks style of children classes and modules.'
-  Enabled: true
+  Enabled: false
   EnforcedStyle: nested
 
 Metrics/ClassLength:
@@ -133,6 +140,10 @@ Style/EmptyLiteral:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#literal-array-hash'
   Enabled: false
 
+Style/EmptyMethod:
+  Description: 'Put empty method definitions on a single line'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-single-line-methods'
+  Enabled: false
 # Checks whether the source file has a utf-8 encoding comment or not
 # AutoCorrectEncodingComment must match the regex
 # /#.*coding\s?[:=]\s?(?:UTF|utf)-8/
@@ -210,6 +221,11 @@ Style/LineEndConcatenation:
   Description: >-
                  Use \ instead of + or << to concatenate two string literals at
                  line end.
+  Enabled: false
+
+Style/SymbolArray:
+  Description: 'Prefer %i to the literal array syntax when you need an array of symbols'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-i'
   Enabled: false
 
 Metrics/LineLength:
@@ -361,7 +377,7 @@ Style/StringLiterals:
   Description: 'Checks if uses of quotes match the configured preference.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-string-literals'
   EnforcedStyle: double_quotes
-  Enabled: true
+  Enabled: false
 
 Style/TrailingCommaInArguments:
   Description: 'Checks for trailing comma in argument lists.'
@@ -381,7 +397,7 @@ Style/TrailingCommaInLiteral:
     - comma
     - consistent_comma
     - no_comma
-  Enabled: true
+  Enabled: false
 
 Style/TrivialAccessors:
   Description: 'Prefer attr_* methods to trivial readers/writers.'

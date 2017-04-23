@@ -11,7 +11,8 @@ class ElectionTest < ActiveSupport::TestCase
   end
 
   test "should not save with duplicate year" do
-    dup = Election.new(year: @election.year, started_at: DateTime.now, ended_at: DateTime.now)
+    dup = Election.new(year: @election.year, started_at: DateTime.now,
+                       ended_at: DateTime.now)
     assert_not dup.save
   end
 end
