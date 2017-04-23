@@ -4,9 +4,7 @@ services:
 addons:
   postgresql: "9.4"
 before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
   - bundle exec rails db:test:prepare
-  - bundle exec rake db:test:load
 script:
 - bundle exec rubocop
 - bundle exec rails test
