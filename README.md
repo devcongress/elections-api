@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/devcongress/elections-api.svg?branch=master)](https://travis-ci.org/devcongress/elections-api)
+
 # Elections Api
 
 The Elections API project is a collection of endpoints to retrieve json-formatted elections-related data in Ghana since 1992.
@@ -24,7 +26,7 @@ Follow instructions [here](https://git-scm.com/downloads) to install the latest 
 3. Setup your environment variables using the intructions [here](http://railsapps.github.io/rails-environment-variables.html). Essentially you need to have variable values for `ELECTIONS_DB`, `ELECTIONS_DB_TEST`, `ELECTIONS_DB_USERNAME`, `ELECTIONS_DB_PASSWORD`
 4. Run `rails db:create` to create your database
 5. Run `rails db:migrate` to run all migrations
-6. Run `rails server` to start your server 
+6. Run `rails server` to start your server
 
 ## How to run the test suite
 
