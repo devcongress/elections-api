@@ -21,10 +21,8 @@ class ApplicationController < ActionController::API
 
   def verify_accept_header
     unless request.accept.blank?
-      unless %w(
-                application/vnd.api+json
-                application/json
-              ).include?(request.accept)
+      unless
+        %w(application/vnd.api+json application/json).include?(request.accept)
         render status: :not_acceptable
       end
     end
