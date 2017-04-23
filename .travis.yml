@@ -1,0 +1,4 @@
+language: ruby
+script:
+- rubocop
+- rails test
