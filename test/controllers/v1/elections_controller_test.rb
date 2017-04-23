@@ -2,7 +2,7 @@ require 'test_helper'
 
 class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @election = elections(:one)
+    @election = elections(:twenty_twelve)
   end
 
   test "should find election by id" do
