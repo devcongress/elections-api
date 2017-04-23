@@ -1,4 +1,4 @@
 language: ruby
 script:
-- bundle exec rubocop -c .rubocop.yml
+- bundle exec rubocop
 - bundle exec rails test
