@@ -30,3 +30,6 @@
 # Ignore rvm config files
 .ruby-version
 .ruby-gemset
+
+# Ignore code coverage folder
+/coverage
