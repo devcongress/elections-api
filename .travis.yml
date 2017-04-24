@@ -6,5 +6,5 @@ addons:
 before_script:
   - bundle exec rails db:test:prepare
 script:
-- bundle exec rubocop
-- bundle exec rails test
+  - bundle exec rubocop
+  - bundle exec rails test
