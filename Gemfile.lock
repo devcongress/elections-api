@@ -49,8 +49,10 @@ GEM
     byebug (9.0.6)
     case_transform (0.2)
       activesupport
-    codeclimate-test-reporter (1.0.8)
-      simplecov (<= 0.13)
+    codecov (0.1.10)
+      json
+      simplecov
+      url
     concurrent-ruby (1.0.5)
     docile (1.1.5)
     erubis (2.7.0)
@@ -142,6 +144,7 @@ GEM
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
     unicode-display_width (1.2.1)
+    url (0.3.2)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -152,7 +155,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.10.0)
   byebug
-  codeclimate-test-reporter (~> 1.0.0)
+  codecov
   listen (~> 3.0.5)
   pg (~> 0.18)
   puma (~> 3.0)
