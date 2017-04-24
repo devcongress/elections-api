@@ -30,3 +30,6 @@
 
 # Ignore .env
 .env
+
+# Ignore code coverage folder
+/coverage
