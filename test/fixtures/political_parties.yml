@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Political Party One
+  slogan: Number One Political Party
+  chairman: Chairman One
+  general_secretary: Secretary Two
+  logo_url: https://example.org/logo-url.png
+  colors:
+    - Red
+    - Blue
+    - Green
+
+two:
+  name: Political Party Uno
+  slogan: Numero Uno Political Party
+  chairman: Chairman Uno
+  general_secretary: Secretary Uno
+  logo_url: https://example.org/logo-url2.png
+  colors: 
+    - Red
+    - Yellow
+    - Green
