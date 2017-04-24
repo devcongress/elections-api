@@ -28,5 +28,10 @@
 .ruby-version
 .ruby-gemset
 
+
 # Ignore .env
 .env
+
+# Ignore code coverage folder
+/coverage
+
