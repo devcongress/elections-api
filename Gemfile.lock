@@ -49,6 +49,8 @@ GEM
     byebug (9.0.6)
     case_transform (0.2)
       activesupport
+    codeclimate-test-reporter (1.0.8)
+      simplecov (<= 0.13)
     codecov (0.1.10)
       json
       simplecov
@@ -155,6 +157,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.10.0)
   byebug
+  codeclimate-test-reporter (~> 1.0.0)
   codecov
   listen (~> 3.0.5)
   pg (~> 0.18)
