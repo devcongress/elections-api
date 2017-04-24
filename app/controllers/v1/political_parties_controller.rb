@@ -17,11 +17,10 @@ class V1::PoliticalPartiesController < ApplicationController
   def destroy
   end
 
-
   private
 
-    def set_party
-      @party = PoliticalParty.find_by(id: params[:id])
-      render status: :not_found and return unless @party
-    end
+  def set_party
+    @party = PoliticalParty.find_by(id: params[:id])
+    render status: :not_found && return unless @party
+  end
 end
