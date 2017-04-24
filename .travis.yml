@@ -1,0 +1,10 @@
+language: ruby
+services:
+  - postgresql
+addons:
+  postgresql: "9.4"
+before_script:
+  - bundle exec rails db:test:prepare
+script:
+- bundle exec rubocop
+- bundle exec rails test
