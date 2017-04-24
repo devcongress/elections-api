@@ -3,8 +3,7 @@ services:
   - postgresql
 addons:
   postgresql: "9.4"
-addons:
-    code_climate:
+  code_climate:
         repo_token: 1224124bc181ea3940cf322a44683e6d1e7ff62d3e10b4bd2e94d47a5ac308aa
 before_script:
   - bundle exec rails db:test:prepare
