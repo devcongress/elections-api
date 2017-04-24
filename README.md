@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/devcongress/elections-api.svg?branch=master)](https://travis-ci.org/devcongress/elections-api)
 
+[![codecov](https://codecov.io/gh/devcongress/elections-api/branch/master/graph/badge.svg)](https://codecov.io/gh/devcongress/elections-api)
+
+
 The Elections API project is a collection of endpoints to retrieve json-formatted elections-related data in Ghana since 1992.
 
 This project is an initiative of [DevCongress](http://devcongress.org).
