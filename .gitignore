@@ -33,5 +33,9 @@
 .env
 
 # Ignore code coverage folder
+<<<<<<< HEAD
 /coverage
 
+=======
+/coverage
+>>>>>>> 2330f0c... update readme
