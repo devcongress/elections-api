@@ -28,7 +28,7 @@ Follow instructions [here](https://git-scm.com/downloads) to install the latest 
 
 ## How to run the test suite
 
-To run the test suite, run `rails test`
+To run the test suite, run `rake test`
 
 ## Contributing
 
