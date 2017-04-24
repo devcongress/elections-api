@@ -10,3 +10,5 @@ before_script:
 script:
   - bundle exec rubocop
   - bundle exec rails test
+after_success:
+  - bundle exec codeclimate-test-reporter
