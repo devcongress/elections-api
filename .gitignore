@@ -23,6 +23,7 @@
 *~
 *.swp
 *.swo
+*.DS_Store
 
 # Ignore rvm config files
 .ruby-version
