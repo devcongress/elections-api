@@ -1,3 +1,4 @@
+Ruby: true
 exclude_paths:
 - test/
 - config/
