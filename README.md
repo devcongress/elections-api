@@ -21,9 +21,9 @@ Follow instructions [here](https://git-scm.com/downloads) to install the latest 
 
 1. Clone this repository on your computer with the following command: `git clone https://github.com/devcongress/elections-api.git`
 2. Run `bundle install` to grab all the dependencies of the project
-3. Create a _.env_ file in the project root directory and add the values for `ELECTIONS_DB`, `ELECTIONS_DB_TEST`, `ELECTIONS_DB_USERNAME`, `ELECTIONS_DB_PASSWORD` variables. All environment variables go into this file.
+3. Create a copy of the  _`.env.example` file in the project root directory, rename it to `.env` and set the values for `ELECTIONS_DB`, `ELECTIONS_DB_TEST`, `ELECTIONS_DB_USERNAME`, `ELECTIONS_DB_PASSWORD` variables. All environment variables go into this file.
 4. Run `rails db:create` to create your database
-5. Run `rails db:schema:load` to load the db schema.
+5. Run `rails db:structure:load` to load the db schema.
 6. Run `rails server` to start your server
 
 ## How to run the test suite
