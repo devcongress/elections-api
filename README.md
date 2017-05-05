@@ -23,7 +23,7 @@ Follow instructions [here](https://git-scm.com/downloads) to install the latest 
 2. Run `bundle install` to grab all the dependencies of the project
 3. Create a _.env_ file in the project root directory and add the values for `ELECTIONS_DB`, `ELECTIONS_DB_TEST`, `ELECTIONS_DB_USERNAME`, `ELECTIONS_DB_PASSWORD` variables. All environment variables go into this file.
 4. Run `rails db:create` to create your database
-5. Run `rails db:migrate` to run all migrations
+5. Run `rails db:schema:load` to load the db schema.
 6. Run `rails server` to start your server
 
 ## How to run the test suite
