@@ -61,6 +61,28 @@ CREATE TABLE ar_internal_metadata (
 
 
 --
+-- Name: candidates; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE candidates (
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    lastname character varying NOT NULL,
+    firstname character varying NOT NULL,
+    othernames character varying,
+    date_of_birth date,
+    sex character varying DEFAULT 'mal'::character varying,
+    highest_qualitfication character varying,
+    occupation character varying,
+    image_url character varying NOT NULL,
+    is_presidential_candidate boolean,
+    created_at timestamp without time zone DEFAULT now() NOT NULL,
+    updated_at timestamp without time zone DEFAULT now() NOT NULL,
+    election_id uuid,
+    political_party_id uuid
+);
+
+
+--
 -- Name: elections; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -109,6 +131,14 @@ ALTER TABLE ONLY ar_internal_metadata
 
 
 --
+-- Name: candidates candidates_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY candidates
+    ADD CONSTRAINT candidates_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: elections elections_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -133,6 +163,20 @@ ALTER TABLE ONLY schema_migrations
 
 
 --
+-- Name: index_candidates_on_election_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_candidates_on_election_id ON candidates USING btree (election_id);
+
+
+--
+-- Name: index_candidates_on_political_party_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_candidates_on_political_party_id ON candidates USING btree (political_party_id);
+
+
+--
 -- Name: index_elections_on_year; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -147,6 +191,22 @@ CREATE UNIQUE INDEX index_political_parties_on_name ON political_parties USING b
 
 
 --
+-- Name: candidates fk_rails_0a25b794fc; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY candidates
+    ADD CONSTRAINT fk_rails_0a25b794fc FOREIGN KEY (election_id) REFERENCES elections(id);
+
+
+--
+-- Name: candidates fk_rails_f740c7828d; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY candidates
+    ADD CONSTRAINT fk_rails_f740c7828d FOREIGN KEY (political_party_id) REFERENCES political_parties(id);
+
+
+--
 -- PostgreSQL database dump complete
 --
 
@@ -158,6 +218,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20170412111942'),
 ('20170412141912'),
 ('20170412142316'),
-('20170412142407');
+('20170412142407'),
+('20170505231914');
 
 
