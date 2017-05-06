@@ -18,14 +18,24 @@ class Candidate < ApplicationRecord
   private
 
   def is_older_than_18
-    if (date_of_birth + 18.years) > Date.today
-      errors.add(:date_of_birth, "candidate is not old enough")
+    if election.present?
+      if (date_of_birth.year + 18) > election.year
+        errors.add(:date_of_birth, "candidate is not old enough")
+      end
+    else
+      errors.add(:election, "candidate should be in an election")
     end
+
   end
 
   def is_older_than_40
-    if (date_of_birth + 40.years) > Date.today
-      errors.add(:date_of_birth, "presidential candiate is not old enough")
+    if election.present?
+      if (date_of_birth.year + 40) > election.year
+        errors.add(:date_of_birth, "presidential candiate is not old enough")
+      end
+    else
+      errors.add(:election, "candidate should be in an election")
     end
   end
+
 end

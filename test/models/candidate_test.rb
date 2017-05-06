@@ -9,7 +9,7 @@ class CandidateTest < ActiveSupport::TestCase
     @parli_candidate.election = @election
   end
 
-  test "should save presidential candidate who is older than 40" do
+  test "should not save candidate who is younger 18" do
   end
 
   test "should not save presidential candidate who is not 40 or older" do
