@@ -4,10 +4,12 @@ class CandidateTest < ActiveSupport::TestCase
   setup do
     @prez_candidate = candidates(:presidential_candidate)
     @parli_candidate = candidates(:parliamentary_candidate)
+    @election = elections(:twenty_twelve)
+    @prez_candidate.election = @election
+    @parli_candidate.election = @election
   end
 
   test "should save presidential candidate who is older than 40" do
-    assert_not @election.save
   end
 
   test "should not save presidential candidate who is not 40 or older" do

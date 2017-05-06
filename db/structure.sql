@@ -71,7 +71,7 @@ CREATE TABLE candidates (
     othernames character varying,
     date_of_birth date,
     sex character varying DEFAULT 'mal'::character varying,
-    highest_qualitfication character varying,
+    highest_qualification character varying,
     occupation character varying,
     image_url character varying,
     is_presidential_candidate boolean DEFAULT false,
@@ -221,6 +221,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20170412142407'),
 ('20170505231914'),
 ('20170506012637'),
-('20170506095718');
+('20170506095718'),
+('20170506101522');
 
 

@@ -2,7 +2,7 @@ parliamentary_candidate:
   lastname: Newman
   firstname: Jon
   othernames: Kofi
-  date_of_birth: 1957-04-12
+  date_of_birth: 1992-04-12
   sex: male
   highest_qualification: SSCE
   occupation: Painter
@@ -13,7 +13,7 @@ presidential_candidate:
   lastname: Smith
   firstname: Jane
   othernames: Awo
-  date_of_birth: 1942-04-12
+  date_of_birth: 1952-04-12
   sex: female
   highest_qualification: HND
   occupation: Farmer
