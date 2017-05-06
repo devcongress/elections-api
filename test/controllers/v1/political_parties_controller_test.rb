@@ -27,4 +27,22 @@ class V1::PoliticalPartiesControllerTest < ActionDispatch::IntegrationTest
     assert_response :ok
     assert_equal "application/json", @response.content_type
   end
+
+  test "should not accept non-JSON API compliant JSON" do
+    post v1_political_parties_url,
+         as: :json,
+         headers: {
+           "Content-Type": "application/vnd.api+json",
+           "Accept": "application/vnd.api+json"
+         },
+         params: {
+           "political_party": {
+             "name": "Party Name",
+             "slogan": "Government",
+             "chairman": "Mrs. Party Chairman"
+           }
+         }
+    assert_response :unprocessable_entity
+    # TODO(yawboakye): Test error response object
+  end
 end
