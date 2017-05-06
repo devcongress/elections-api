@@ -9,7 +9,6 @@ class Candidate < ApplicationRecord
   validates :lastname, presence: true
   validates :firstname, presence: true
   validates :date_of_birth, presence: true
-  validates :is_presidential_candidate, presence: true
 
   with_options if: :is_presidential_candidate? do |candidate|
     # candidate.validates :constituency, :presence
