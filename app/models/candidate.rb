@@ -5,33 +5,26 @@ class Candidate < ApplicationRecord
 
   enum sex: { female: 'fem', male: 'mal' }
 
-  validate :is_older_than_18
+  validate :older_than
   validates :lastname, presence: true
   validates :firstname, presence: true
   validates :date_of_birth, presence: true
 
   with_options if: :is_presidential_candidate? do |candidate|
     # candidate.validates :constituency, :presence
-    candidate.validate :is_older_than_40 
+    candidate.validate :older_than_40
   end
 
   private
 
-  def is_older_than_18
-    if election.present?
-      if (date_of_birth.year + 18) > election.year
-        errors.add(:date_of_birth, "candidate is not old enough")
-      end
-    else
-      errors.add(:election, "candidate should be in an election")
-    end
-
+  def older_than_40
+    older_than(40)
   end
 
-  def is_older_than_40
+  def older_than(age=18)
     if election.present?
-      if (date_of_birth.year + 40) > election.year
-        errors.add(:date_of_birth, "presidential candiate is not old enough")
+      if (date_of_birth.year + age) > election.year
+        errors.add(:date_of_birth, "candiate should be older than #{age}")
       end
     else
       errors.add(:election, "candidate should be in an election")
