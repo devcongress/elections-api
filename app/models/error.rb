@@ -23,10 +23,10 @@ class Error
     # During modification, add new error codes to the bottom
     # of the list and increment code for previous last error
     # to assign as number.
-    UNSUPPORTED_MEDIA_TYPE = "600"
-    BAD_ACCEPT_HEADER      = "601"
-    MISSING_PARAMETER      = "602"
-    MISSING_RESOURCE_TYPE  = "603"
+    UNSUPPORTED_MEDIA_TYPE = "600".freeze
+    BAD_ACCEPT_HEADER      = "601".freeze
+    MISSING_PARAMETER      = "602".freeze
+    MISSING_RESOURCE_TYPE  = "603".freeze
   end
 end
 
