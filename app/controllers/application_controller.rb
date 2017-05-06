@@ -14,7 +14,15 @@ class ApplicationController < ActionController::API
     def verify_content_type
       if %w(create update).include?(params[:action])
         unless request.content_type == "application/vnd.api+json"
-          render status: :unprocessable_entity
+          render status: :unsupported_media_type, json: Error.new.append(
+            status: :unsupported_media_type,
+            detail: I18n.t("error.detail.unsupported_media_type"),
+             title: I18n.t("error.title.unsupported_media_type"),
+              code: Error::Codes::UNSUPPORTED_MEDIA_TYPE,
+             links: {
+               about: "http://jsonapi.org/format/#content-negotiation"
+             }
+          )
         end
       end
     end
@@ -23,7 +31,15 @@ class ApplicationController < ActionController::API
       unless request.accept.blank?
         unless
           %w(application/vnd.api+json application/json).include?(request.accept)
-          render status: :not_acceptable
+          render status: :not_acceptable, json: Error.new.append(
+            status: :not_acceptable,
+            detail: I18n.t("error.not_acceptable"),
+             title: "Wrong/missing Accept header",
+              code: Error::Codes::BAD_ACCEPT_HEADER,
+             links: {
+               about: "http://jsonapi.org/format/#content-negotiation"
+             }
+          )
         end
       end
     end
