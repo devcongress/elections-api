@@ -36,15 +36,43 @@ class V1::ElectionsController < ApplicationController
     end
 
     def parse_json_api_payload
-      @body = ActiveModelSerializers::Deserialization.jsonapi_parse params,
-        only: [
-          :year,
-          :"started-at",
-          :"ended-at"
-        ]
+      errors = Error.new
+      resource_type = params[:type]
+      unless resource_type && resource_type == "elections"
+        render status: :unprocessable_entity, json: errors.append(
+          status: :unprocessable_entity,
+           title: I18n.t("error.title.bad_resource_type"),
+          detail: I18n.t("error.detail.bad_resource_type"),
+            code: Error::Codes::MISSING_RESOURCE_TYPE
+        )
+        return  # short if `type` is wrong/missing.
+      end
 
-      # TODO(yawboakye): include informative error object
-      render status: :unprocessable_entity if @body.empty?
+      required_params = %w(year started-at ended-at)
+      @body = ActiveModelSerializers::Deserialization.jsonapi_parse(params, only: required_params)
+
+      if @body.empty?
+        errors.append(
+          status: :unprocessable_entity,
+          detail: I18n.t("error.detail.unproccessable_entity"),
+           title: I18n.t("error.title.missing_required_parameter"),
+            code: Error::Codes::MISSING_PARAMETER
+        )
+      else
+        missing_params = required_params.select { |p| !@body.key? p.underscore.to_sym }
+        if missing_params.any?
+          missing_params.each do |missing_param|
+            errors.append(
+              status: :unprocessable_entity,
+              detail: "Missing `#{missing_param}`, a required parameter",
+               title: I18n.t("error.title.missing_required_parameter"),
+                code: Error::Codes::MISSING_PARAMETER
+            )
+          end
+        end
+      end
+
+      render status: :unprocessable_entity, json: errors unless errors.empty?
     end
 
     def election_params

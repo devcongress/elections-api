@@ -50,6 +50,7 @@ class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
   test "should not save election with start date later than end date" do
     started_at = DateTime.now
     ended_at = started_at - 2.days
+
     post v1_elections_url,
               as: :json,
               headers: {
@@ -62,9 +63,9 @@ class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
                     "year": started_at.year,
                     "started-at": started_at.rfc3339,
                     "ended-at": ended_at.rfc3339
-                  },
-                  "type": "elections"
-                }
+                  }
+                },
+                "type": "elections"
               }
 
     assert_response :bad_request
