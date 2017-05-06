@@ -73,8 +73,8 @@ CREATE TABLE candidates (
     sex character varying DEFAULT 'mal'::character varying,
     highest_qualitfication character varying,
     occupation character varying,
-    image_url character varying NOT NULL,
-    is_presidential_candidate boolean,
+    image_url character varying,
+    is_presidential_candidate boolean DEFAULT false,
     created_at timestamp without time zone DEFAULT now() NOT NULL,
     updated_at timestamp without time zone DEFAULT now() NOT NULL,
     election_id uuid,
@@ -219,6 +219,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20170412141912'),
 ('20170412142316'),
 ('20170412142407'),
-('20170505231914');
+('20170505231914'),
+('20170506012637');
 
 
