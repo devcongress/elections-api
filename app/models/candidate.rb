@@ -21,7 +21,7 @@ class Candidate < ApplicationRecord
     older_than(40)
   end
 
-  def older_than(age=18)
+  def older_than(age = 18)
     if election.present?
       if (date_of_birth.year + age) > election.year
         errors.add(:date_of_birth, "candiate should be older than #{age}")
