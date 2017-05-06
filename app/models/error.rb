@@ -17,6 +17,17 @@ class Error
   def to_hash
     { "errors": errors }
   end
+
+  module Codes
+    # Custom codes for identifying errors.
+    # During modification, add new error codes to the bottom
+    # of the list and increment code for previous last error
+    # to assign as number.
+    UNSUPPORTED_MEDIA_TYPE = "600"
+    BAD_ACCEPT_HEADER      = "601"
+    MISSING_PARAMETER      = "602"
+    MISSING_RESOURCE_TYPE  = "603"
+  end
 end
 
 class Err
