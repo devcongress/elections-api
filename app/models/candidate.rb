@@ -30,5 +30,4 @@ class Candidate < ApplicationRecord
       errors.add(:election, "candidate should be in an election")
     end
   end
-
 end

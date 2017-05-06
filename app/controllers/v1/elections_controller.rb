@@ -41,7 +41,7 @@ class V1::ElectionsController < ApplicationController
         :year,
         :"started-at",
         :"ended-at"
-    ]
+      ]
 
     # TODO(yawboakye): include informative error object
     render status: :unprocessable_entity if @body.empty?
