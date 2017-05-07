@@ -67,30 +67,30 @@ class ApplicationController < ActionController::API
       end
     end
 
-  def ensure_payload_conforms_to_jsonapi_format
-    unless params[:type]
-      errors.append(
-        source: :type,
-        status: :unprocessable_entity,
-         title: I18n.t("error.title.missing_resource_type"),
-        detail: I18n.t("error.detail.missing_resource_type"),
-          code: Error::Codes::MISSING_RESOURCE_TYPE
-      )
-    end
-    unless params[:data] && params[:data][:attributes]
-      errors.append(
-        source: :data,
-        status: :unprocessable_entity,
-        detail: I18n.t("error.detail.missing_data_object"),
-         title: I18n.t("error.title.missing_data_object"),
-          code: Error::Codes::MISSING_DATA
-      )
+    def ensure_payload_conforms_to_jsonapi_format
+      unless params[:type]
+        errors.append(
+          source: :type,
+          status: :unprocessable_entity,
+           title: I18n.t("error.title.missing_resource_type"),
+          detail: I18n.t("error.detail.missing_resource_type"),
+            code: Error::Codes::MISSING_RESOURCE_TYPE
+        )
+      end
+      unless params[:data] && params[:data][:attributes]
+        errors.append(
+          source: :data,
+          status: :unprocessable_entity,
+          detail: I18n.t("error.detail.missing_data_object"),
+           title: I18n.t("error.title.missing_data_object"),
+            code: Error::Codes::MISSING_DATA
+        )
+      end
+
+      render status: :unprocessable_entity, json: errors unless errors.empty?
     end
 
-    render status: :unprocessable_entity, json: errors unless errors.empty?
-  end
-
-  def errors
-    @errors ||= Error.new
-  end
+    def errors
+      @errors ||= Error.new
+    end
 end
