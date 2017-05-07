@@ -63,13 +63,11 @@ class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
 
     body = JSON.parse(response.body)
     assert_response :unprocessable_entity
-    assert_equal    "603", body["errors"][0]["code"]
+    assert_equal    "type", body["errors"][0]["source"]
+    assert_equal    "603",  body["errors"][0]["code"]
   end
 
   test "should not save election with start date later than end date" do
-    started_at = DateTime.now
-    ended_at = started_at - 2.days
-
     post v1_elections_url,
               as: :json,
               headers: {
@@ -79,15 +77,17 @@ class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
               params: {
                 "data": {
                   "attributes": {
-                    "year": started_at.year,
-                    "started-at": started_at.rfc3339,
-                    "ended-at": ended_at.rfc3339
+                    "year": "2016",
+                    "started-at": "2016-12-07T09:00:00.000Z",
+                    "ended-at": "2016-12-07T08:59:59.999Z",
                   }
                 },
                 "type": "elections"
               }
 
+    body = JSON.parse(response.body)
     assert_response :bad_request
-    # TODO(yawboakye): Test error response object
+    assert_equal    "data/attributes/started_at", body["errors"][0]["source"]
+    assert_equal    "607",                        body["errors"][0]["code"]
   end
 end
