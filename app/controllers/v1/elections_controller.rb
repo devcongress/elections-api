@@ -11,7 +11,7 @@ class V1::ElectionsController < ApplicationController
     if election.save
       render status: :created, json: election
     else
-      render status: :bad_request, json: election.errors.messages
+      render status: :bad_request, json: prepare_error(election.errors)
     end
   end
 

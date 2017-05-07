@@ -42,6 +42,7 @@ class V1::PoliticalPartiesControllerTest < ActionDispatch::IntegrationTest
              "chairman": "Mrs. Party Chairman"
            }
          }
+
     assert_response :unprocessable_entity
     # TODO(yawboakye): Test error response object
   end

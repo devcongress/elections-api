@@ -11,7 +11,7 @@ class V1::PoliticalPartiesController < ApplicationController
     if party.save
       render status: :created, json: party
     else
-      render status: :bad_request, json: party.errors.messages
+      render status: :bad_request, json: prepare_error(party.errors)
     end
   end
 

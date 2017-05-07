@@ -44,7 +44,26 @@ class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
          }
 
     assert_response :unprocessable_entity
-    # TODO(yawboakye): Test error response object
+  end
+
+  test "should not accept JSON without resource type" do
+    post v1_elections_url,
+         as: :json,
+         headers: {
+           "Content-Type": "application/vnd.api+json",
+           "Accept": "application/vnd.api+json"
+         },
+         params: {
+           "data": {
+             "year": "2016",
+             "started-at": "2016-12-07T09:00:00.000Z",
+             "ended-at": "2016-12-07T17:00:00.000Z"
+           }
+         }
+
+    body = JSON.parse(response.body)
+    assert_response :unprocessable_entity
+    assert_equal    "603", body["errors"][0]["code"]
   end
 
   test "should not save election with start date later than end date" do
