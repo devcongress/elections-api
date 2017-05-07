@@ -9,6 +9,7 @@ class Error
     errors << Err.new(options)
     self
   end
+  alias_method :<<, :append
 
   def empty?
     errors.empty?
@@ -27,6 +28,20 @@ class Error
     BAD_ACCEPT_HEADER      = "601".freeze
     MISSING_PARAMETER      = "602".freeze
     MISSING_RESOURCE_TYPE  = "603".freeze
+    PARAMETER_TAKEN        = "604".freeze
+    WRONG_RESOURCE_TYPE    = "605".freeze
+    MISSING_DATA           = "606".freeze
+
+
+
+    # Converts ActiveRecord validation errors to our
+    # custom error codes. Expand to include more error types.
+    def self.error_type_to_code(type)
+      case type
+      when :taken then PARAMETER_TAKEN
+      when :blank then MISSING_PARAMETER
+      end
+    end
   end
 end
 
