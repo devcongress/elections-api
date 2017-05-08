@@ -7,7 +7,6 @@ class Election < ApplicationRecord
   validates :started_at, presence: true
   validates :ended_at,   presence: true
 
-
   private
 
     def started_at_cannot_be_later_than_ended_at

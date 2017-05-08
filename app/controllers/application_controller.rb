@@ -1,8 +1,11 @@
 class ApplicationController < ActionController::API
+  attr_reader :attrs
+
   after_action :set_content_type, except: [:destroy]
   before_action :verify_accept_header
   before_action :verify_content_type
   before_action :ensure_payload_conforms_to_jsonapi_format, only: [:create, :update]
+  before_action :extract_attributes!, only: [:create]
 
   private
 
@@ -92,5 +95,45 @@ class ApplicationController < ActionController::API
 
     def errors
       @errors ||= Error.new
+    end
+
+    def parse_params(options)
+      type     = options.delete(:type) || self.class.controller_name.dasherize
+      required = options.delete(:require)
+      unless params[:type] == type
+        render status: :unprocessable_entity, json: errors.append(
+          source: :type,
+          status: :unprocessable_entity,
+          detail: I18n.t("error.detail.bad_resource_type"),
+           title: I18n.t("error.title.bad_resource_type"),
+            code: Error::Codes::MISSING_RESOURCE_TYPE,
+        )
+        return
+      end
+
+      @attrs = ActiveModelSerializers::Deserialization.jsonapi_parse(params, only: required)
+      missing = required.reject { |p| @attrs.key? p.underscore.to_sym }
+      if missing.any?
+        missing.each do |param|
+          errors.append(
+            source: "data/attributes/#{param}",
+            status: :unprocessable_entity,
+            detail: "Missing `#{param}`, a required parameter",
+             title: I18n.t("error.title.missing_required_parameter"),
+              code: Error::Codes::MISSING_PARAMETER,
+          )
+        end
+      end
+
+      render status: :unprocessable_entity, json: errors unless @errors.empty?
+    end
+
+    def errors
+      @errors ||= Error.new
+    end
+
+    # Subclasses should implement `extract_attributes!` to suit
+    # their own needs.
+    def extract_attributes!
     end
 end
