@@ -37,11 +37,11 @@ class V1::ElectionsController < ApplicationController
 
   def parse_json_api_payload
     @body = ActiveModelSerializers::Deserialization.jsonapi_parse params,
-    only: [
-      :year,
-      :"started-at",
-      :"ended-at"
-    ]
+      only: [
+        :year,
+        :"started-at",
+        :"ended-at"
+      ]
 
     # TODO(yawboakye): include informative error object
     render status: :unprocessable_entity if @body.empty?
