@@ -23,10 +23,8 @@ class Error
     # Custom codes for identifying errors.
     # During modification, add new error codes to the bottom
     # of the list. Number for new error is largest error number + 1
-    UNSUPPORTED_MEDIA_TYPE = "600".freeze   # Any Content-Type other than `application/json`
-                                            # and `application/vnd.api+json`
-    BAD_ACCEPT_HEADER      = "601".freeze   # Any Accept other than `application/json` and
-                                            # `application/vnd.api+json`
+    UNSUPPORTED_MEDIA_TYPE = "600".freeze   # Content-Type not `application/json` or `application/vnd.api+json`
+    BAD_ACCEPT_HEADER      = "601".freeze   # Accept not `application/json` or `application/vnd.api+json`
     MISSING_PARAMETER      = "602".freeze   # When a required parameter isn't given
     MISSING_RESOURCE_TYPE  = "603".freeze   # Payload doesn't have `type`
     PARAMETER_TAKEN        = "604".freeze   # Unique parameter but record exist with that value
