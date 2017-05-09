@@ -1,6 +1,5 @@
 class V1::ElectionsController < ApplicationController
-  before_action :parse_json_api_payload, only: [:create, :update]
-  before_action :set_election,           only: [:show]
+  before_action :set_election, only: [:show]
 
   def index
     render json: Election.all
@@ -11,7 +10,7 @@ class V1::ElectionsController < ApplicationController
     if election.save
       render status: :created, json: election
     else
-      render status: :bad_request, json: election.errors.messages
+      render status: :bad_request, json: prepare_error(election.errors)
     end
   end
 
@@ -35,19 +34,15 @@ class V1::ElectionsController < ApplicationController
       end
     end
 
-    def parse_json_api_payload
-      @body = ActiveModelSerializers::Deserialization.jsonapi_parse params,
-        only: [
-          :year,
-          :"started-at",
-          :"ended-at"
-        ]
-
-      # TODO(yawboakye): include informative error object
-      render status: :unprocessable_entity if @body.empty?
+    def extract_attributes!
+      parse_params require: %w(
+        year
+        started-at
+        ended-at
+      )
     end
 
     def election_params
-      @body
+      attrs
     end
 end

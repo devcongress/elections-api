@@ -1,23 +1,17 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  error:
+    title:
+      missing_required_parameter: "Missing required parameter"
+      bad_resource_type: "Bad/missing resource type"
+      unsupported_media_type: "Wrong/missing Content-Type"
+      missing_resource_type: "Payload has no value set for resource `type`"
+      bad_resource_type: "Bad resource type"
+      missing_data_object: "Missing `data` object"
+    detail:
+      unprocessable_entity: "Payload has bad format"
+      unsupported_media_type: "Wrong Content-Type. Expected either `application/vnd.api+json` or `application/json`"
+      not_acceptable: "Wrong or missing Accept header. Expects `application/vnd.api+json` or `application/json`"
+      missing_required_parameter: ""
+      missing_resource_type: "The payload didn't specify any type of resource"
+      bad_resource_type: "The `type` specified in the payload does not match the type of resource you want to create"
+      missing_data_object: "Payload has no `data` object"

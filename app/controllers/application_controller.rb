@@ -1,20 +1,54 @@
 class ApplicationController < ActionController::API
+  attr_reader :attrs
+
   after_action :set_content_type, except: [:destroy]
   before_action :verify_accept_header
   before_action :verify_content_type
+  before_action :ensure_payload_conforms_to_jsonapi_format, only: [:create, :update]
+  before_action :extract_attributes!, only: [:create]
 
   private
 
+    def jsonapi_media_type
+      "application/vnd.api+json".freeze
+    end
+
+    def prepare_error(error, status = :bad_request)
+      error.messages.each do |attr, messages|
+        # attr = :year
+        messages.each_with_index do |message, i|
+          code = Error::Codes.error_type_to_code(error.details[attr][i][:error])
+          errors.append(
+            status: status,
+            source: "data/attributes/#{attr}",
+            detail: "`#{attr.to_s}` #{message}",
+             title: "#{error.details[attr][i][:error].to_s} parameter",
+              code: code
+          )
+        end
+      end
+      errors
+    end
+
     def set_content_type
       content_type = request.accept
-      content_type = "application/vnd.api+json" if content_type.blank?
+      content_type = jsonapi_media_type if content_type.blank?
       response.content_type = content_type
     end
 
     def verify_content_type
       if %w(create update).include?(params[:action])
-        unless request.content_type == "application/vnd.api+json"
-          render status: :unprocessable_entity
+        unless request.content_type == jsonapi_media_type
+          render status: :unsupported_media_type,
+                   json: Error.new.append(
+                     status: :unsupported_media_type,
+                     detail: I18n.t("error.detail.unsupported_media_type"),
+                      title: I18n.t("error.title.unsupported_media_type"),
+                       code: Error::Codes::UNSUPPORTED_MEDIA_TYPE,
+                      links: {
+                        about: "http://jsonapi.org/format/#content-negotiation"
+                      }
+                   )
         end
       end
     end
@@ -23,8 +57,83 @@ class ApplicationController < ActionController::API
       unless request.accept.blank?
         unless
           %w(application/vnd.api+json application/json).include?(request.accept)
-          render status: :not_acceptable
+          render status: :not_acceptable, json: Error.new.append(
+            status: :not_acceptable,
+            detail: I18n.t("error.not_acceptable"),
+             title: "Wrong/missing Accept header",
+              code: Error::Codes::BAD_ACCEPT_HEADER,
+             links: {
+               about: "http://jsonapi.org/format/#content-negotiation"
+             }
+          )
         end
       end
+    end
+
+    def ensure_payload_conforms_to_jsonapi_format
+      unless params[:type]
+        errors.append(
+          source: :type,
+          status: :unprocessable_entity,
+           title: I18n.t("error.title.missing_resource_type"),
+          detail: I18n.t("error.detail.missing_resource_type"),
+            code: Error::Codes::MISSING_RESOURCE_TYPE
+        )
+      end
+      unless params[:data] && params[:data][:attributes]
+        errors.append(
+          source: :data,
+          status: :unprocessable_entity,
+          detail: I18n.t("error.detail.missing_data_object"),
+           title: I18n.t("error.title.missing_data_object"),
+            code: Error::Codes::MISSING_DATA
+        )
+      end
+
+      render status: :unprocessable_entity, json: errors unless errors.empty?
+    end
+
+    def errors
+      @errors ||= Error.new
+    end
+
+    def parse_params(options)
+      type     = options.delete(:type) || self.class.controller_name.dasherize
+      required = options.delete(:require)
+      unless params[:type] == type
+        render status: :unprocessable_entity, json: errors.append(
+          source: :type,
+          status: :unprocessable_entity,
+          detail: I18n.t("error.detail.bad_resource_type"),
+           title: I18n.t("error.title.bad_resource_type"),
+            code: Error::Codes::MISSING_RESOURCE_TYPE,
+        )
+        return
+      end
+
+      @attrs = ActiveModelSerializers::Deserialization.jsonapi_parse(params, only: required)
+      missing = required.reject { |p| @attrs.key? p.underscore.to_sym }
+      if missing.any?
+        missing.each do |param|
+          errors.append(
+            source: "data/attributes/#{param}",
+            status: :unprocessable_entity,
+            detail: "Missing `#{param}`, a required parameter",
+             title: I18n.t("error.title.missing_required_parameter"),
+              code: Error::Codes::MISSING_PARAMETER,
+          )
+        end
+      end
+
+      render status: :unprocessable_entity, json: errors unless @errors.empty?
+    end
+
+    def errors
+      @errors ||= Error.new
+    end
+
+    # Subclasses should implement `extract_attributes!` to suit
+    # their own needs.
+    def extract_attributes!
     end
 end

@@ -10,14 +10,20 @@ class Election < ApplicationRecord
   private
 
     def started_at_cannot_be_later_than_ended_at
-      if started_at >= ended_at
-        errors.add(:started_at, "can't be later than ended at")
+      if started_at && ended_at
+        errors.add(
+          :started_at,
+          :invalid,
+          message: "can't be later than ended_at"
+        ) unless ended_at > started_at
       end
     end
 
     def started_at_cannot_be_in_the_future
-      if started_at >= DateTime.now
-        errors.add(:started_at, "can't be in the future")
-      end
+      errors.add(
+        :started_at,
+        :invalid,
+        message: "can't be in the future"
+      ) unless started_at && started_at < DateTime.now
     end
 end
