@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class V1::ElectionsControllerTest < ActionDispatch::IntegrationTest
   setup do

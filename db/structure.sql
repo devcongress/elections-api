@@ -213,7 +213,6 @@ ALTER TABLE ONLY candidates
 SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
-('0'),
 ('20170412110704'),
 ('20170412111942'),
 ('20170412141912'),

@@ -27,27 +27,27 @@ class V1::PoliticalPartiesController < ApplicationController
 
   private
 
-  def set_party
-    @party = PoliticalParty.find_by(id: params[:id])
-    render status: :not_found && return unless @party
-  end
+    def set_party
+      @party = PoliticalParty.find_by(id: params[:id])
+      render status: :not_found && return unless @party
+    end
 
-  def parse_json_api_payload
-    @body = ActiveModelSerializers::Deserialization.jsonapi_parse params,
-    only: [
-      :name,
-      :slogan,
-      :chairman,
-      :"general-secretary",
-      :"logo-url",
-      :colors
-    ]
+    def parse_json_api_payload
+      @body = ActiveModelSerializers::Deserialization.jsonapi_parse params,
+      only: [
+        :name,
+        :slogan,
+        :chairman,
+        :"general-secretary",
+        :"logo-url",
+        :colors
+      ]
 
-    # TODO(yawboakye): include informative error object
-    render status: :unprocessable_entity if @body.empty?
-  end
+      # TODO(yawboakye): include informative error object
+      render status: :unprocessable_entity if @body.empty?
+    end
 
-  def party_params
-    @body
-  end
+    def party_params
+      @body
+    end
 end

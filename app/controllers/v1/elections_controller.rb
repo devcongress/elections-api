@@ -27,27 +27,27 @@ class V1::ElectionsController < ApplicationController
 
   private
 
-  def set_election
-    @election = Election.find_by(id: params[:id])
-    unless @election
-      render status: :not_found
-      return
+    def set_election
+      @election = Election.find_by(id: params[:id])
+      unless @election
+        render status: :not_found
+        return
+      end
     end
-  end
 
-  def parse_json_api_payload
-    @body = ActiveModelSerializers::Deserialization.jsonapi_parse params,
-      only: [
-        :year,
-        :"started-at",
-        :"ended-at"
-      ]
+    def parse_json_api_payload
+      @body = ActiveModelSerializers::Deserialization.jsonapi_parse params,
+        only: [
+          :year,
+          :"started-at",
+          :"ended-at"
+        ]
 
-    # TODO(yawboakye): include informative error object
-    render status: :unprocessable_entity if @body.empty?
-  end
+      # TODO(yawboakye): include informative error object
+      render status: :unprocessable_entity if @body.empty?
+    end
 
-  def election_params
-    @body
-  end
+    def election_params
+      @body
+    end
 end
