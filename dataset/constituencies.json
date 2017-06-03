@@ -1,0 +1,280 @@
+{"__v":0,"_id":{"$oid":"58427707c3775300115c5678"},"code":"1","name":"ADANSI ASOKWA","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427716c3775300115c5679"},"code":"2","name":"AFIGYA KWABRE NORTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427723c3775300115c567a"},"code":"3","name":"AFIGYA KWABRE SOUTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842772fc3775300115c567b"},"code":"4","name":"AFIGYA SEKYERE EAST","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842773dc3775300115c567c"},"code":"5","name":"AHAFO ANO NORTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842774ac3775300115c567d"},"code":"6","name":"AHAFO ANO SOUTH EAST","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842775bc3775300115c567e"},"code":"7","name":"AHAFO ANO SOUTH WEST","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842776dc3775300115c567f"},"code":"8","name":"AKROFUOM","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427778c3775300115c5680"},"code":"9","name":"ASANTE AKIM CENTRAL","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427790c3775300115c5681"},"code":"10","name":"ASANTE AKIM NORTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842779ac3775300115c5682"},"code":"11","name":"ASANTE AKIM SOUTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584277d2c3775300115c5684"},"code":"12","name":"ASAWASE","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427857c3775300115c5685"},"code":"13","name":"ASOKWA","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842786bc3775300115c5686"},"code":"14","name":"ATWIMA KWANWOMA","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427876c3775300115c5687"},"code":"15","name":"ATWIMA MPONUA","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427893c3775300115c5688"},"code":"16","name":"ATWIMA NWABIAGYA NORTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584278a6c3775300115c5689"},"code":"17","name":"ATWIMA NWABIAGYA SOUTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584278bfc3775300115c568a"},"code":"18","name":"BANTAMA","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584278dbc3775300115c568b"},"code":"19","name":"BEKWAI","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427931c3775300115c568c"},"code":"20","name":"BOSOME FREHO","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427940c3775300115c568d"},"code":"21","name":"BOSOMTWE","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842795bc3775300115c568e"},"code":"22","name":"EFFIDUASE/ASOKORE","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842797dc3775300115c568f"},"code":"23","name":"EJISU","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584279a0c3775300115c5690"},"code":"24","name":"EJURA SEKYEDUMASE","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584279b0c3775300115c5691"},"code":"25","name":"FOMENA","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584279bfc3775300115c5692"},"code":"26","name":"JUABEN","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584279cec3775300115c5693"},"code":"27","name":"KUMAWU","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584279ddc3775300115c5694"},"code":"28","name":"KWABRE EAST","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584279f1c3775300115c5695"},"code":"29","name":"KWADASO","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427ad7c3775300115c5696"},"code":"30","name":"MAMPONG","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427b30c3775300115c5697"},"code":"31","name":"MANHYIA NORTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427b42c3775300115c5698"},"code":"32","name":"MANHYIA SOUTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427b51c3775300115c5699"},"code":"33","name":"MANSO ADUBIA","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427b5ec3775300115c569a"},"code":"34","name":"MANSO NKWANTA","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427b7ec3775300115c569b"},"code":"35","name":"NEW EDUBIASE","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427b8ac3775300115c569c"},"code":"36","name":"NHYIAESO","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427b9ac3775300115c569d"},"code":"37","name":"NSUTA/KWAMANG/BEPOSO","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427bb8c3775300115c569e"},"code":"38","name":"OBUASI EAST","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427bc5c3775300115c569f"},"code":"39","name":"OBUASI WEST","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427bd5c3775300115c56a0"},"code":"40","name":"ODOTOBIRI","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427bf2c3775300115c56a1"},"code":"41","name":"OFFINSO NORTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427bfdc3775300115c56a2"},"code":"42","name":"OFFINSO SOUTH","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427c0dc3775300115c56a3"},"code":"43","name":"OFORIKROM","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427c20c3775300115c56a4"},"code":"44","name":"OLD TAFO","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427c2fc3775300115c56a5"},"code":"45","name":"SEKYERE AFRAM PLAINS","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427c3dc3775300115c56a6"},"code":"46","name":"SUAME","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427c4ac3775300115c56a7"},"code":"47","name":"SUBIN","region":"ASHANTI","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427c6bc3775300115c56a8"},"code":"48","name":"ASUNAFO NORTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427c77c3775300115c56a9"},"code":"49","name":"ASUNAFO SOUTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427c83c3775300115c56aa"},"code":"50","name":"ASUTIFI NORTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427cc8c3775300115c56ab"},"code":"51","name":"ASUTIFI SOUTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427cf6c3775300115c56ac"},"code":"52","name":"ATEBUBU/AMANTIN","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d01c3775300115c56ad"},"code":"53","name":"BANDA","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d0dc3775300115c56ae"},"code":"54","name":"BEREKUM EAST","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d18c3775300115c56af"},"code":"55","name":"BEREKUM WEST","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d23c3775300115c56b0"},"code":"56","name":"DORMAA CENTRAL","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d2dc3775300115c56b1"},"code":"57","name":"DORMAA EAST","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d3ac3775300115c56b2"},"code":"58","name":"DORMAA WEST","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d46c3775300115c56b3"},"code":"59","name":"JAMAN NORTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d50c3775300115c56b4"},"code":"60","name":"JAMAN SOUTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d5bc3775300115c56b5"},"code":"61","name":"KINTAMPO NORTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d65c3775300115c56b6"},"code":"62","name":"KINTAMPO SOUTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d71c3775300115c56b7"},"code":"67","name":"NKORANZA NORTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427d7fc3775300115c56b8"},"code":"68","name":"NKORANZA SOUTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427da0c3775300115c56b9"},"code":"69","name":"PRU EAST","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427dacc3775300115c56ba"},"code":"70","name":"PRU WEST","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427db7c3775300115c56bb"},"code":"71","name":"SENE EAST","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427dc2c3775300115c56bc"},"code":"72","name":"SENE WEST","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427dcec3775300115c56bd"},"code":"73","name":"SUNYANI EAST","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427dd9c3775300115c56be"},"code":"74","name":"SUNYANI WEST","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427de5c3775300115c56bf"},"code":"75","name":"TAIN","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427df0c3775300115c56c0"},"code":"76","name":"TANO NORTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427e08c3775300115c56c1"},"code":"77","name":"TANO SOUTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427e14c3775300115c56c2"},"code":"78","name":"TECHIMAN NORTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427e20c3775300115c56c3"},"code":"79","name":"TECHIMAN SOUTH","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427e2ec3775300115c56c4"},"code":"80","name":"WENCHI","region":"BRONG-AHAFO","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427e81c3775300115c56c5"},"code":"81","name":"ABURA/ASEBU/KWAMANKESE","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427e8cc3775300115c56c6"},"code":"82","name":"AGONA EAST","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f07c3775300115c56c7"},"code":"83","name":"AGONA WEST","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f13c3775300115c56c8"},"code":"84","name":"AJUMAKO ENYAN ESIAM","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f1fc3775300115c56c9"},"code":"85","name":"ASIKUMA/ODOBEN/BRAKWA","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f2ac3775300115c56ca"},"code":"86","name":"ASSIN CENTRAL","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f41c3775300115c56cb"},"code":"87","name":"ASSIN NORTH","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f4dc3775300115c56cc"},"code":"88","name":"ASSIN SOUTH","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f5dc3775300115c56cd"},"code":"89","name":"AWUTU SENYA EAST","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f69c3775300115c56ce"},"code":"90","name":"AWUTU SENYA WEST","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f75c3775300115c56cf"},"code":"91","name":"CAPE COAST NORTH","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f80c3775300115c56d0"},"code":"92","name":"CAPE COAST SOUTH","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f8cc3775300115c56d1"},"code":"93","name":"EFFUTU","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427f98c3775300115c56d2"},"code":"94","name":"EKUMFI","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427fa3c3775300115c56d3"},"code":"95","name":"GOMOA CENTRAL","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427fafc3775300115c56d4"},"code":"96","name":"GOMOA EAST","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427fbcc3775300115c56d5"},"code":"97","name":"GOMOA WEST","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427fc9c3775300115c56d6"},"code":"98","name":"HEMANG LOWER DENKYIRA","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427fd5c3775300115c56d7"},"code":"99","name":"KOMENDA/EDINA/EGUAFO/ABREM (KEEA)","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427fe4c3775300115c56d8"},"code":"100","name":"MFANTSEMAN","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427fefc3775300115c56d9"},"code":"101","name":"TWIFO ATI MORKWAA","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58427ffac3775300115c56da"},"code":"102","name":"UPPER DENKYIRA EAST","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842800bc3775300115c56db"},"code":"103","name":"UPPER DENKYIRA WEST","region":"CENTRAL","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584281fec3775300115c56dc"},"code":"104","name":"AHANTA WEST","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842820ac3775300115c56dd"},"code":"105","name":"AMENFI CENTRAL","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428219c3775300115c56de"},"code":"106","name":"AMENFI EAST","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428223c3775300115c56df"},"code":"107","name":"AMENFI WEST","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428282c3775300115c56e0"},"code":"108","name":"AOWIN","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842828cc3775300115c56e1"},"code":"109","name":"BIA EAST","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428299c3775300115c56e2"},"code":"110","name":"BIA WEST","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584282c6c3775300115c56e3"},"code":"111","name":"BIBIANI-ANHWIASO-BEKWAI","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584282d2c3775300115c56e4"},"code":"112","name":"BODI","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584282e0c3775300115c56e5"},"code":"113","name":"EFFIA","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584282ecc3775300115c56e6"},"code":"114","name":"ELLEMBELE","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584282f7c3775300115c56e7"},"code":"115","name":"ESSIKADU-KETAN","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428305c3775300115c56e8"},"code":"116","name":"EVALUE - AJOMORO - GWIRA","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428311c3775300115c56e9"},"code":"117","name":"JOMORO","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842831fc3775300115c56ea"},"code":"118","name":"JUABOSO","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842832cc3775300115c56eb"},"code":"119","name":"KWESIMINTSIM","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428341c3775300115c56ec"},"code":"120","name":"MPOHOR","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842834bc3775300115c56ed"},"code":"121","name":"PRESTEA HUNI-VALLEY","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428359c3775300115c56ee"},"code":"122","name":"SEFWI AKONTOMBRA","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842836ec3775300115c56ef"},"code":"123","name":"SEFWI WIAWSO","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842837ac3775300115c56f0"},"code":"124","name":"SEKONDI","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428388c3775300115c56f1"},"code":"125","name":"SHAMA","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842839bc3775300115c56f2"},"code":"126","name":"SUAMAN","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584283a8c3775300115c56f3"},"code":"127","name":"TAKORADI","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584283bac3775300115c56f4"},"code":"128","name":"TARKWA NSUAEM","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584283cec3775300115c56f5"},"code":"129","name":"WASSA EAST","region":"WESTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842858cc3775300115c56f6"},"code":"130","name":"ADAKLU","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842859ec3775300115c56f7"},"code":"131","name":"AFADJATO SOUTH","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584285abc3775300115c56f8"},"code":"132","name":"AGOTIME-ZIOPE","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584285b7c3775300115c56f9"},"code":"133","name":"AKAN","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584285c5c3775300115c56fa"},"code":"134","name":"AKATSI NORTH","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584285d1c3775300115c56fb"},"code":"135","name":"AKATSI SOUTH","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584285dcc3775300115c56fc"},"code":"136","name":"ANLO","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584285e8c3775300115c56fd"},"code":"137","name":"BIAKOYE","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584285f3c3775300115c56fe"},"code":"138","name":"BUEM","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584285fec3775300115c56ff"},"code":"139","name":"CENTRAL TONGU","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842861dc3775300115c5700"},"code":"140","name":"HO CENTRAL","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428627c3775300115c5701"},"code":"141","name":"HO WEST","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428632c3775300115c5702"},"code":"142","name":"HOHOE","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428646c3775300115c5703"},"code":"143","name":"KETA","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428651c3775300115c5704"},"code":"144","name":"KETU NORTH","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428668c3775300115c5705"},"code":"145","name":"KETU SOUTH","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428677c3775300115c5706"},"code":"146","name":"KPANDO","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428683c3775300115c5707"},"code":"147","name":"KRACHI EAST","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428690c3775300115c5708"},"code":"148","name":"KRACHI NCHUMURU","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842869dc3775300115c5709"},"code":"149","name":"KRACHI WEST","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584286aac3775300115c570a"},"code":"150","name":"NKWANTA NORTH","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584286b6c3775300115c570b"},"code":"151","name":"NKWANTA SOUTH","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584286c3c3775300115c570c"},"code":"152","name":"NORTH DAYI","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584286cec3775300115c570d"},"code":"153","name":"NORTH TONGU","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584286dfc3775300115c570e"},"code":"154","name":"SOUTH DAYI","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584286dfc3775300115c570f"},"code":"154","name":"SOUTH DAYI","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584286ecc3775300115c5710"},"code":"156","name":"SOUTH TONGU","region":"VOLTA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428725c3775300115c5711"},"code":"157","name":"DAFFIAMA/BUSSIE/ISSA","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842872ec3775300115c5712"},"code":"158","name":"JIRAPA","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842873cc3775300115c5713"},"code":"159","name":"LAMBUSSIE-KARNI","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428749c3775300115c5714"},"code":"160","name":"LAWRA","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428753c3775300115c5715"},"code":"161","name":"NADOWLI/KALEO","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842875ec3775300115c5716"},"code":"162","name":"NANDOM","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842876bc3775300115c5717"},"code":"163","name":"SISSALA EAST","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428777c3775300115c5718"},"code":"164","name":"SISSALA WEST","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584287cfc3775300115c5719"},"code":"165","name":"WA CENTRAL","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584287dbc3775300115c571a"},"code":"166","name":"WA EAST","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584287e6c3775300115c571b"},"code":"167","name":"WA WEST","region":"UPPER WEST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428800c3775300115c571c"},"code":"168","name":"BAWKU CENTRAL","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842880cc3775300115c571d"},"code":"169","name":"BINDURI","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842881ac3775300115c571e"},"code":"170","name":"BOLGATANGA CENTRAL","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428826c3775300115c571f"},"code":"171","name":"BOLGATANGA EAST","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428830c3775300115c5720"},"code":"172","name":"BONGO","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842883ac3775300115c5721"},"code":"173","name":"BUILSA NORTH","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428845c3775300115c5722"},"code":"174","name":"BUILSA SOUTH","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428853c3775300115c5723"},"code":"175","name":"CHIANA/PAGA","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842885fc3775300115c5724"},"code":"178","name":"GARU","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842886ac3775300115c5725"},"code":"179","name":"NABDAM","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428878c3775300115c5726"},"code":"180","name":"NAVRONGO CENTRAL","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584288a0c3775300115c5727"},"code":"181","name":"PUSIGA","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584288b0c3775300115c5728"},"code":"182","name":"TALENSI","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584288b9c3775300115c5729"},"code":"183","name":"TEMPANE","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584288c7c3775300115c572a"},"code":"184","name":"ZEBILLA","region":"UPPER EAST","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584288e5c3775300115c572b"},"code":"185","name":"ABETIFI","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584288f7c3775300115c572c"},"code":"186","name":"ABIREM","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428907c3775300115c572d"},"code":"187","name":"ABUAKWA NORTH","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428912c3775300115c572e"},"code":"188","name":"ABUAKWA SOUTH","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842892cc3775300115c572f"},"code":"188","name":"ACHIASE","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842893cc3775300115c5730"},"code":"189","name":"AFRAM PLAINS NORTH","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428945c3775300115c5731"},"code":"190","name":"AFRAM PLAINS SOUTH","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428951c3775300115c5732"},"code":"191","name":"AKIM ODA","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842895cc3775300115c5733"},"code":"192","name":"AKIM SWEDRU","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842896dc3775300115c5734"},"code":"193","name":"AKROPONG","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428976c3775300115c5735"},"code":"194","name":"AKUAPEM SOUTH","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428984c3775300115c5736"},"code":"195","name":"AKWATIA","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5842898fc3775300115c5737"},"code":"196","name":"ASENE/AKROSO/MANSO","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584289a4c3775300115c5738"},"code":"197","name":"ASUOGYAMAN","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584289b7c3775300115c5739"},"code":"198","name":"ATIWA EAST","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584289c1c3775300115c573a"},"code":"199","name":"ATIWA WEST","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584289cbc3775300115c573b"},"code":"200","name":"AYENSUANO","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584289dbc3775300115c573c"},"code":"121","name":"FANTEAKWA NORTH","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584289e4c3775300115c573d"},"code":"122","name":"FANTEAKWA SOUTH","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a01c3775300115c573e"},"code":"201","name":"KADE","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a0bc3775300115c573f"},"code":"202","name":"LOWER MANYA KROBO","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a17c3775300115c5740"},"code":"203","name":"LOWER WEST AKIM","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a24c3775300115c5741"},"code":"204","name":"MPRAESO","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a2fc3775300115c5742"},"code":"205","name":"NEW JUABEN NORTH","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a3ac3775300115c5743"},"code":"206","name":"NEW JUABEN SOUTH","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a45c3775300115c5744"},"code":"207","name":"NKAWKAW","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a52c3775300115c5745"},"code":"208","name":"NSAWAM/ADOAGYIRI","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a5dc3775300115c5746"},"code":"209","name":"OFOASE/AYIREBI","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a69c3775300115c5747"},"code":"210","name":"OKERE","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a75c3775300115c5748"},"code":"211","name":"SUHUM","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a81c3775300115c5749"},"code":"212","name":"UPPER MANYA KROBO","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a8bc3775300115c574a"},"code":"213","name":"UPPER WEST AKIM","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58428a98c3775300115c574b"},"code":"214","name":"YILO KROBO","region":"EASTERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f1f472ce90011c4574c"},"code":"215","name":"BIMBILLA","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f32472ce90011c4574d"},"code":"216","name":"BOLE/BAMBOI","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f3f472ce90011c4574e"},"code":"217","name":"BUNKPURUGU","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f4c472ce90011c4574f"},"code":"218","name":"CHEREPONI","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f58472ce90011c45750"},"code":"219","name":"DABOYA / MANKARIGU","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f63472ce90011c45751"},"code":"220","name":"DAMONGO","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f63472ce90011c45752"},"code":"220","name":"DAMONGO","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f6f472ce90011c45753"},"code":"221","name":"GUSHEGU","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f6f472ce90011c45754"},"code":"221","name":"GUSHEGU","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f7a472ce90011c45755"},"code":"222","name":"KARAGA","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f84472ce90011c45756"},"code":"223","name":"KPANDAI","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f90472ce90011c45757"},"code":"224","name":"KUMBUNGU","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451f9b472ce90011c45758"},"code":"225","name":"MION","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451fa6472ce90011c45759"},"code":"226","name":"NALERIGU/GAMGABA","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451fb2472ce90011c4575a"},"code":"227","name":"NANTON","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451fbe472ce90011c4575b"},"code":"228","name":"SABOBA","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451fca472ce90011c4575c"},"code":"229","name":"SAGNARIGU","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451fd5472ce90011c4575d"},"code":"230","name":"SALAGA NORTH","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451fe1472ce90011c4575e"},"code":"231","name":"SALAGA SOUTH","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451feb472ce90011c4575f"},"code":"232","name":"SAVELUGU","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451feb472ce90011c45760"},"code":"232","name":"SAVELUGU","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58451ff8472ce90011c45761"},"code":"233","name":"SAWLA TUNA KALBA","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452003472ce90011c45762"},"code":"234","name":"TAMALE CENTRAL","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845200e472ce90011c45763"},"code":"235","name":"TAMALE NORTH","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845200e472ce90011c45764"},"code":"235","name":"TAMALE NORTH","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845201a472ce90011c45765"},"code":"236","name":"TAMALE SOUTH","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452026472ce90011c45766"},"code":"237","name":"TATALE / SANGULI","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452031472ce90011c45767"},"code":"238","name":"TOLON","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845203c472ce90011c45768"},"code":"239","name":"WALEWALE","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452048472ce90011c45769"},"code":"240","name":"WULENSI","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452052472ce90011c4576a"},"code":"241","name":"YAGABA/KUBORI","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845205d472ce90011c4576b"},"code":"242","name":"YAPEI-KUSAWGU","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452069472ce90011c4576c"},"code":"243","name":"YENDI","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452077472ce90011c4576d"},"code":"244","name":"YUNYOO","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845207f472ce90011c4576e"},"code":"245","name":"ZABZUGU","region":"NORTHERN","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584520c5472ce90011c4576f"},"code":"246","name":"ABLEKUMA CENTRAL","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584520cf472ce90011c45770"},"code":"247","name":"ABLEKUMA NORTH","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584520dc472ce90011c45771"},"code":"248","name":"ABLEKUMA SOUTH","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584520e8472ce90011c45772"},"code":"249","name":"ABLEKUMA WEST","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584520f2472ce90011c45773"},"code":"250","name":"ADA","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584520ff472ce90011c45774"},"code":"251","name":"ADENTAN","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452125472ce90011c45775"},"code":"253","name":"AMASAMAN","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452135472ce90011c45776"},"code":"254","name":"ANYAA/SOWUTUOM","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452141472ce90011c45777"},"code":"255","name":"ASHAIMAN","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845214d472ce90011c45778"},"code":"256","name":"AYAWASO CENTRAL","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452157472ce90011c45779"},"code":"257","name":"AYAWASO EAST","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452163472ce90011c4577a"},"code":"258","name":"AYAWASO NORTH","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452170472ce90011c4577b"},"code":"259","name":"AYAWASO WEST WUOGON","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845217b472ce90011c4577c"},"code":"260","name":"BORTIANOR-NGLESHIE AMANFRO","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452188472ce90011c4577d"},"code":"261","name":"DADEKOTOPON","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452192472ce90011c4577e"},"code":"262","name":"DOME/KWABENYA","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845219e472ce90011c4577f"},"code":"263","name":"DOMEABRA/OBOM","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584521a9472ce90011c45780"},"code":"264","name":"KORLE KLOTTEY","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584521b4472ce90011c45781"},"code":"265","name":"KPONE-KATAMANSO","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584521c0472ce90011c45782"},"code":"266","name":"KROWOR","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584521ca472ce90011c45783"},"code":"267","name":"LEDZOKUKU","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584521d6472ce90011c45784"},"code":"268","name":"MADINA","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584521e4472ce90011c45785"},"code":"269","name":"NINGO PRAMPRAM","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584521f1472ce90011c45786"},"code":"270","name":"ODODODIODIOO","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"584521fc472ce90011c45787"},"code":"271","name":"OKAIKWEI CENTRAL","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845221d472ce90011c45788"},"code":"272","name":"OKAIKWEI NORTH","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452229472ce90011c45789"},"code":"273","name":"OKAIKWEI SOUTH","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452235472ce90011c4578a"},"code":"274","name":"SEGE","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452240472ce90011c4578b"},"code":"275","name":"SHAI-OSUDOKU","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"5845224c472ce90011c4578c"},"code":"276","name":"TEMA-CENTRAL","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452258472ce90011c4578d"},"code":"277","name":"TEMA-EAST","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452264472ce90011c4578e"},"code":"278","name":"TEMA-WEST","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452273472ce90011c4578f"},"code":"279","name":"TROBU","region":"GREATER-ACCRA","registeredVoters":0}
+{"__v":0,"_id":{"$oid":"58452280472ce90011c45790"},"code":"280","name":"WEIJA / GBAWE","region":"GREATER-ACCRA","registeredVoters":0}
