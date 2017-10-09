@@ -1,6 +1,6 @@
 class CreateConstituencies < ActiveRecord::Migration[5.0]
   def change
-    create_table :constituencies do |t|
+    create_table :constituencies, id: :uuid, default: 'gen_random_uuid()' do |t|
       t.timestamps
 
       t.string :code, null: false

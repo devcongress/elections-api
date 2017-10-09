@@ -78,7 +78,23 @@ CREATE TABLE candidates (
     created_at timestamp without time zone DEFAULT now() NOT NULL,
     updated_at timestamp without time zone DEFAULT now() NOT NULL,
     election_id uuid,
-    political_party_id uuid
+    political_party_id uuid,
+    constituency_id uuid
+);
+
+
+--
+-- Name: constituencies; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE constituencies (
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL,
+    code character varying NOT NULL,
+    name character varying NOT NULL,
+    region character varying NOT NULL,
+    registered_voters integer NOT NULL
 );
 
 
@@ -139,6 +155,14 @@ ALTER TABLE ONLY candidates
 
 
 --
+-- Name: constituencies constituencies_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY constituencies
+    ADD CONSTRAINT constituencies_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: elections elections_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -160,6 +184,13 @@ ALTER TABLE ONLY political_parties
 
 ALTER TABLE ONLY schema_migrations
     ADD CONSTRAINT schema_migrations_pkey PRIMARY KEY (version);
+
+
+--
+-- Name: index_candidates_on_constituency_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_candidates_on_constituency_id ON candidates USING btree (constituency_id);
 
 
 --
@@ -199,6 +230,14 @@ ALTER TABLE ONLY candidates
 
 
 --
+-- Name: candidates fk_rails_8afef8e095; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY candidates
+    ADD CONSTRAINT fk_rails_8afef8e095 FOREIGN KEY (constituency_id) REFERENCES constituencies(id);
+
+
+--
 -- Name: candidates fk_rails_f740c7828d; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -221,6 +260,6 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20170505231914'),
 ('20170506012637'),
 ('20170506095718'),
-('20170506101522');
-
-
+('20170506101522'),
+('20171009134732'),
+('20171009140511');
