@@ -7,7 +7,7 @@ This project is an initiative of [DevCongress](http://devcongress.org).
 
 ## What you need
 
-* [Ruby](https://www.ruby-lang.org/en/): This project uses `Ruby v 2.4.0`, we try to stay on the latest stable or releast candidate version. We try to stay on the latest stable or release candidate. [rbenv](https://github.com/rbenv/rbenv) is pretty easy to set up but there's other equally good ruby version management tools out there. Choose which one works for you.
+* [Ruby](https://www.ruby-lang.org/en/): This project uses `Ruby v 2.4.1`, we try to stay on the latest stable or releast candidate version. We try to stay on the latest stable or release candidate. [rbenv](https://github.com/rbenv/rbenv) is pretty easy to set up but there's other equally good ruby version management tools out there. Choose which one works for you.
 
 * [Bundler](https://rubygems.org/gems/bundler/versions/1.11.2): You can grab the latest version of the bundler by running `gem install bundler`. You will need this to grab all the dependencies of the application.
 
