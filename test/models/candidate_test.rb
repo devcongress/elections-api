@@ -5,8 +5,11 @@ class CandidateTest < ActiveSupport::TestCase
     @prez_candidate = candidates(:presidential_candidate)
     @parli_candidate = candidates(:parliamentary_candidate)
     @election = elections(:twenty_twelve)
+    @constituency = constituencies(:one)
     @prez_candidate.election = @election
+    @prez_candidate.constituency = @constituency
     @parli_candidate.election = @election
+    @parli_candidate.constituency = @constituency
   end
 
   test "should not save candidate who is younger than 18 during election" do
@@ -33,7 +36,8 @@ class CandidateTest < ActiveSupport::TestCase
     assert @prez_candidate.save
   end
 
-  test "if not presidential candidate,  should be belong to constituency" do
-    # TODO(bubunyo) pull constituency model from petersowah and do test
+  test "if not presidential candidate, should be belong to constituency" do
+    @parli_candidate.constituency = nil
+    assert_not @parli_candidate.save
   end
 end
